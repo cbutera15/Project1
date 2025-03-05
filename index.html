@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colin's Portfolio</title>
+</head>
+<body>
+<header>
+    <p>COLIN BUTERA'S PORTFOLIO</p>
+    <p id="scroll-down">scroll down</p>
+</header>
+
+<section class="intro">
+    <p id="intro-title">A LITTLE INTRODUCTION</p>
+    <p id="intro-dash">_________</p>
+    <img src="./images/profile-picture.jpg" alt="profile picture" id="profile-picture" height="500" width="375">
+    <script>
+        window.onscroll = function () {
+            var scrollPosition = window.scrollY;
+            if (scrollPosition <= 1230) {
+                document.getElementById("profile-picture").style.left = scrollPosition - 1000 + "px";
+            }
+        };
+    </script>
+
+    <article id="intro-hey">
+        <p>Hey,</p>
+        <p>I'm Colin</p>
+    </article>
+
+    <article id="intro-school">
+        <p>I'm a junior</p>
+        <p>computer science major</p>
+        <p>at the University of Vermont</p>
+    </article>
+
+    <article id="intro-hobbies">
+        <p>When I'm not coding,</p>
+        <p>I enjoy skiing and hiking</p>
+        <p>in beautiful Vermont.</p>
+        <p>I also cook a lot.</p>
+    </article>
+
+    <article id="intro-hobby-photos">
+        <img src="./images/hobby-ski.jpeg" alt="ski picture" id="ski-picture">
+        <img src="./images/hobby-hike.jpg" alt="hike picture" id="hike-picture">
+        <img src="./images/hobby-cooking.jpeg" alt="cook picture" id="cooking-picture">
+        <img src="./images/hobby-ski2.jpeg" alt="ski2 picture" id="ski2-picture">
+        <img src="./images/hobby-hike2.jpeg" alt="hike picture" id="hike2-picture">
+    </article>
+    <script>
+        window.addEventListener("scroll", function () {
+            var scrollPosition2 = window.scrollY;
+            if (scrollPosition2 <= 4000) {
+                document.getElementById("intro-hobby-photos").style.left = scrollPosition2 ** 1.03 - 4900 + "px";
+            } else {
+                document.getElementById("intro-hobby-photos").style.right = 0;
+            }
+        });
+    </script>
+</section>
+<section class="pages">
+    <a href="projects.html" class="left_button">PROJECTS</a>
+    <a href="contact.html" class="right_button">CONTACT</a>
+</section>
+<footer>
+    <p>COLIN BUTERA</p>
+    <p style="text-align: right">2025</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #F1FAEE;
+    color: #1D3557;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url("./images/header_background.jpeg");
+    justify-content: left;
+    font-family: "Baskerville", serif;
+    font-style: italic;
+    color: #F1FAEE;
+    font-size: 90px;
+    background-position: center;
+    padding: 50vh 0 50vh 20px;
+    background-attachment: fixed;
+}
+
+footer {
+    display: flex;
+    background-color: #F1FAEE;
+    font-size: 150px;
+    font-family: "Baskerville", serif;
+    font-style: italic;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    font-size: 70px;
+    padding: 50vh 0 250vh;
+}
+
+.left_button {
+    display: inline-block;
+    padding: 50vh 18%;
+    background-color: #1D3557;
+    color: #E63946;
+    text-decoration: none;
+}
+
+.left_button:hover {
+    background-color: #E63946;
+    color: #1D3557;
+}
+
+.right_button {
+    display: inline-block;
+    padding: 50vh 18%;
+    background-color: #1D3557;
+    color: #E63946;
+    text-decoration: none;
+}
+
+.right_button:hover {
+    background-color: #E63946;
+    color: #1D3557;
+}
+
+.pages {
+    display: flex;
+    font-family: "Baskerville", serif;
+    font-style: italic;
+    font-size: 50px;
+    background-color: #1D3557;
+}
+
+.cs-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-size: 70px;
+    padding: 50vh 0 30vh;
+}
+
+.media-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    padding: 50vh 0 40vh;
+    background-color: #1D3557;
+    color: #F1FAEE;
+}
+
+.description {
+    font-size: 30px;
+}
+
+#scroll-down {
+    text-align: right;
+    justify-content: right;
+    padding-right: 20px;
+    position: relative;
+    top: -50px;
+    font-size: 30px
+}
+
+#intro-title {
+    position: relative;
+    top: -300px;
+    font-family: "Baskerville", serif;
+    font-style: italic;
+    font-size: 90px;
+    text-align: center;
+}
+
+#media-title {
+    position: relative;
+    top: -300px;
+    font-family: "Baskerville", serif;
+    font-style: italic;
+    font-size: 90px;
+    text-align: center;
+}
+
+#intro-dash {
+    position: relative;
+    top: -275px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#profile-picture {
+    position: absolute;
+    transition: ease-in 50ms;
+    bottom: -1045px;
+    border-radius: 4%
+}
+
+#profile-picture:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 800ms;
+}
+
+#intro-hey {
+    padding-right: 200px;
+    position: absolute;
+    right: 0;
+}
+
+#intro-school {
+    text-align: left;
+    padding-left: 200px;
+    position: absolute;
+    top: 2200px
+}
+
+#intro-hobbies {
+    text-align: right;
+    padding-right: 200px;
+    position: absolute;
+    top: 2800px;
+    right: 0;
+}
+
+#intro-hobby-photos {
+    position: relative;
+    top: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    text-align: center;
+}
+
+#ski-picture {
+    width:450px;
+    height:450px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+#hike-picture {
+    width:450px;
+    height:450px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#cooking-picture {
+    width:450px;
+    height:450px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+#ski2-picture {
+    width:450px;
+    height:450px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#hike2-picture {
+    width:450px;
+    height:450px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+#cs01 {
+    transition: 1s;
+}
+
+#cs02 {
+    transition: 1s;
+}
+
+#cs03 {
+    transition: 1s;
+}
+
+#cs01:hover {
+    color: #E63946;
+    padding: 100px;
+    transition: 1s;
+}
+
+#cs02:hover {
+    color: #E63946;
+    padding: 100px;
+    transition: 1s;
+}
+
+#cs03:hover {
+    color: #E63946;
+    padding: 100px;
+    transition: 1s;
+}
+
+#videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#cs-projects-body {
+    padding-left: 50px;
+}
+
+#contact-header {
+    width: 100%;
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    .pages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_button, .right_button {
+        width: 80%;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
