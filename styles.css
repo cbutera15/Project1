@@ -247,7 +247,6 @@ footer {
 
 #videos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -272,5 +271,65 @@ footer {
         width: 80%;
         text-align: center;
         padding: 15px 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #profile-picture {
+        scale: 50%;
+        position: relative;
+        top: -300px;
+    }
+
+    #intro-hey {
+        padding-right: 30px;
+        padding-bottom: 80px;
+    }
+    #intro-school {
+        padding-left: 30px;
+    }
+    #intro-hobbies {
+        padding-right: 30px;
+        padding-bottom: 0;
+    }
+
+    #intro-hobby-photos {
+        padding-top: 0;
+        top: 1400px;
+    }
+
+    #videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #contact-header {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    #contact-title {
+        top: 100px;
+        position: absolute;
+    }
+
+    #scroll-down {
+        position: absolute;
+        top: 750px;
+    }
+
+    #intro-title {
+        font-size: 50px;
     }
 }
